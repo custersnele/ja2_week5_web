@@ -10,13 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "FirstServlet", value = "/FirstServlet", initParams = @WebInitParam(name = "text", value = "zomer"))
+@WebServlet(name = "FirstServlet", value = "/FirstServlet", initParams = @WebInitParam(name = "text", value = "Een ijsje zou mij wel smaken!"))
 public class FirstServlet extends HttpServlet {
 	private String text;
 
 	@Override
 	public void init() throws ServletException {
-		// TODO Auto-generated method stub
 		super.init();
 		text = getInitParameter("text");
 	}
@@ -29,7 +28,7 @@ public class FirstServlet extends HttpServlet {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<body>");
-			out.println("<h1>Hello Servlet Get</h1>");
+			out.println("<h1>First Servlet Example</h1>");
 			out.println("<b>" + text + "</b>");
 			out.println("</body>");
 			out.println("</html>");

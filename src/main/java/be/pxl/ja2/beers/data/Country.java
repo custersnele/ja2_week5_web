@@ -1,8 +1,5 @@
 package be.pxl.ja2.beers.data;
 
-//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {
 	private String name;
 	private String alpha2Code;

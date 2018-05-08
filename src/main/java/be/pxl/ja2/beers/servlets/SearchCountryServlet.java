@@ -26,12 +26,12 @@ public class SearchCountryServlet extends HttpServlet {
 		try (PrintWriter out = resp.getWriter()) {
 			out.println("<html>");
 			out.println("<body>");
-			out.println("<h1>Hello Servlet Get</h1>");
-			out.println("<table>");
+			out.println("<h1>Country information</h1>");
+			out.println("<table border='1'>");
 
-			out.println("<tr><td>" + country.getName() + "</td></tr>");
-			out.println("<tr><td>" + country.getAlpha2Code() + "</td></tr>");
-			out.println("<tr><td>" + country.getNativeName() + "</td></tr>");
+			out.println("<tr><td>Name:</td><td>" + country.getName() + "</td></tr>");
+			out.println("<tr><td>Code:</td><td>" + country.getAlpha2Code() + "</td></tr>");
+			out.println("<tr><td>Native name:</td><td>" + country.getNativeName() + "</td></tr>");
 
 			out.println("</table");
 			out.println("</body>");

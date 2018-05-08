@@ -22,7 +22,7 @@ public class IKnowYouServlet extends HttpServlet {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<body>");
-			out.println("<h1>Hello Servlet Get</h1>");
+			out.println("<h1>I know you</h1>");
 			out.println("<form method=\"GET\" action=\"IKnowYou\">");
 			HttpSession session = req.getSession();
 			if (session.getAttribute("name") == null) {

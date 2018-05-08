@@ -28,7 +28,7 @@ public class AdditionServlet extends HttpServlet {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<body>");
-			out.println("<h1>Hello Servlet Get</h1>");
+			out.println("<h1>AdditionServlet Response</h1>");
 			out.print(answer.toString());
 			out.println("</body>");
 			out.println("</html>");
