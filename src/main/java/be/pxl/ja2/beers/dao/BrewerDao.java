@@ -10,8 +10,8 @@ import be.pxl.ja2.beers.data.Brewer;
 public class BrewerDao {
 	private EntityManager em;
 	
-	public BrewerDao() {
-		em = EntityManagerUtil.getEntityManagerFactory().createEntityManager();
+	public BrewerDao(EntityManager entityManager) {
+		this.em = entityManager;
 	}
 	
 	public List<Brewer> findByCity(String city) {
