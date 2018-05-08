@@ -9,7 +9,7 @@
 	</session-config>
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
-		<location>/illegal_name.html</location>
+		<location>/error_page.html</location>
 	</error-page>
 	
 </web-app>
