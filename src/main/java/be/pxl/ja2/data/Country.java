@@ -1,4 +1,4 @@
-package be.pxl.ja2.beers.data;
+package be.pxl.ja2.data;
 
 public class Country {
 	private String name;

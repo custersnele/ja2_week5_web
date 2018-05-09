@@ -1,4 +1,4 @@
-package be.pxl.ja2.beers.servlets;
+package be.pxl.ja2.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;

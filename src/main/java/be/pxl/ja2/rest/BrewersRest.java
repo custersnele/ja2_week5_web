@@ -9,9 +9,9 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import be.pxl.ja2.beers.dao.BrewerDao;
-import be.pxl.ja2.beers.dao.EntityManagerUtil;
-import be.pxl.ja2.beers.data.Brewer;
+import be.pxl.ja2.dao.BrewerDao;
+import be.pxl.ja2.dao.EntityManagerUtil;
+import be.pxl.ja2.data.Brewer;
 
 @Path("brewers")
 public class BrewersRest {

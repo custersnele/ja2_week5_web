@@ -1,4 +1,4 @@
-package be.pxl.ja2.beers.data;
+package be.pxl.ja2.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package be.pxl.ja2.beers.dao;
+package be.pxl.ja2.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

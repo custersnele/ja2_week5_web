@@ -1,20 +1,19 @@
-package be.pxl.ja2.beers.servlets;
+package be.pxl.ja2.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import be.pxl.ja2.beers.dao.BrewerDao;
-import be.pxl.ja2.beers.dao.EntityManagerUtil;
-import be.pxl.ja2.beers.data.Brewer;
+import be.pxl.ja2.dao.BrewerDao;
+import be.pxl.ja2.dao.EntityManagerUtil;
+import be.pxl.ja2.data.Brewer;
 
 
 @WebServlet(name = "SearchBrewers", value = "/SearchBrewers")

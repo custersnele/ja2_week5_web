@@ -1,4 +1,4 @@
-package be.pxl.ja2.beers.servlets;
+package be.pxl.ja2.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 
-import be.pxl.ja2.beers.data.Country;
+import be.pxl.ja2.data.Country;
 
 @WebServlet(name = "SearchCountry", value = "/SearchCountry")
 public class SearchCountryServlet extends HttpServlet {
