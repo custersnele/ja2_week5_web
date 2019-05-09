@@ -26,22 +26,17 @@ public class IKnowYouServlet extends HttpServlet {
 			out.println("<form method=\"GET\" action=\"IKnowYou\">");
 			HttpSession session = req.getSession();
 			if (session.getAttribute("name") == null) {
-
 				if (req.getParameter("name") != null) {
-
 					session.setAttribute("name", req.getParameter("name"));
-
 				} else {
 					out.println("I don't know you yet! Give me your name!");
 					out.println("<input type=\"text\" name=\"name\" id=\"name\" />");
 					out.println("<input type=\"submit\" value=\"Submit\" />");
-
 				}
 			}
 			if (session.getAttribute("name") != null) {
 				out.println("You are " + session.getAttribute("name"));
 				out.println("<input type=\"submit\" value=\"Try again\" />");
-
 			}
 			out.println("</form>");
 			out.println("</body>");
