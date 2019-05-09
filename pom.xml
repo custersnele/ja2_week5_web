@@ -15,23 +15,16 @@
 	<build>
 		<finalName>web-intro</finalName>
 		<plugins>
-			<plugin>
-				<groupId>org.codehaus.cargo</groupId>
-				<artifactId>cargo-maven2-plugin</artifactId>
-				<version>1.6.3</version>
-				<configuration>
-					<container>
-						<containerId>tomee7x</containerId>
-						<type>installed</type>
-						<home>${env.TOMCAT_HOME}</home>
-					</container>
-					<configuration>
-						<type>existing</type>
-						<home>${env.TOMCAT_HOME}</home>
-					</configuration>
-				</configuration>
-			</plugin>
-		</plugins>
+            <plugin>
+                <groupId>org.apache.tomee.maven</groupId>
+                <artifactId>tomee-maven-plugin</artifactId>
+                <version>7.0.4</version>
+                <configuration>
+                    <tomeeVersion>7.0.4</tomeeVersion>
+                    <tomeeClassifier>plus</tomeeClassifier>
+                </configuration>
+            </plugin>
+			</plugins>
 	</build>
 
 	<dependencies>
